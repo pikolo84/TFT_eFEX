@@ -296,7 +296,7 @@ void TFT_eFEX::drawJpeg(String filename, int16_t xpos, int16_t ypos, TFT_eSprite
       sprSwapBytes = _spr->getSwapBytes();
       _spr->setSwapBytes(false);
     }
-    _tft->setSwapBytes(false);
+    _tft->setSwapBytes(true);
 
     // save the coordinate of the right and bottom edges to assist image cropping
     // to the screen size
